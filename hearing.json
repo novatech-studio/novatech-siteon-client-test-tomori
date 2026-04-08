@@ -1,0 +1,59 @@
+{
+  "contract": {
+    "type": "siteon",
+    "plan": "standard"
+  },
+  "basic": {
+    "business_type": "ビストロ・洋食",
+    "name_en": "Tomori",
+    "name_ja": "ビストロ ともり",
+    "tagline": "灯すように、夜の食卓を。",
+    "area": "白金高輪駅徒歩3分",
+    "address": "東京都港区白金1-99-99 シロカネガーデンテラス1F",
+    "tel": "03-6699-1100",
+    "hours": "ランチ 11:30 - 14:30 / ディナー 18:00 - 23:00",
+    "holiday": "毎週月曜日・第3日曜日",
+    "payment": ["現金", "クレジットカード", "PayPay", "交通系IC"],
+    "seats": "カウンター6席 / テーブル12席（個室なし）"
+  },
+  "story": {
+    "headline": "灯すように、夜の食卓を。",
+    "body": "南仏の旅で出会った、家族で囲む長い食卓と、ろうそくの灯。あの夜の温度を東京の住宅街に連れ帰りたいと思いました。生産者の顔が見える素材を、シンプルに、けれど丁寧に。明日の余韻になる一皿をご用意して、お待ちしています。",
+    "chef_name": "灯田 智仁",
+    "chef_role": "シェフ",
+    "chef_career": "東京・恵比寿のフレンチで6年、南仏アヴィニョンの星付きビストロで2年研鑽を積み、2022年に独立。"
+  },
+  "menu": {
+    "items": [
+      {"category": "前菜", "name": "本日のシャルキュトリ盛り合わせ", "price": 1980, "desc": "自家製パテ・リエット・テリーヌの三種盛り。バゲット添え。"},
+      {"category": "前菜", "name": "三浦野菜のグリル バーニャカウダ", "price": 1650, "desc": "契約農家から届く季節野菜を炭火で。アンチョビソースで。"},
+      {"category": "メイン", "name": "信州ハーブ鶏の赤ワイン煮", "price": 2750, "desc": "じっくり煮込んだ信州ハーブ鶏。マッシュポテト添え。"},
+      {"category": "メイン", "name": "本日の魚介ブイヤベース", "price": 3300, "desc": "市場直送の魚介3種と季節野菜。サフラン香るスープ仕立て。"},
+      {"category": "メイン", "name": "国産和牛ハラミのグリル", "price": 3850, "desc": "炭火で焼き上げた国産和牛ハラミ。粒マスタードと共に。"},
+      {"category": "デザート", "name": "クレームブリュレ バニラ風味", "price": 880, "desc": "マダガスカル産バニラを使った定番デザート。"}
+    ],
+    "course_name": "おまかせディナーコース",
+    "course_price": 6600,
+    "course_desc": "前菜 / スープ / 本日の魚 / メイン / デザート / 食後の飲み物（全6皿）"
+  },
+  "scenes": [
+    {"label": "デート", "summary": "落ち着いた照明と窓際テーブルで、特別な夜の余韻を。"},
+    {"label": "記念日", "summary": "アニバーサリープレートのご用意も承ります（要事前予約）。"},
+    {"label": "少人数の集まり", "summary": "6名様までの貸切も可能。お気軽にご相談ください。"}
+  ],
+  "reservation": {
+    "methods": ["TableCheck", "電話", "公式LINE"],
+    "ui_type": "external_link",
+    "url": "https://tomori.example/reserve"
+  },
+  "design": {
+    "preset": "ナチュラル × 木の温度",
+    "concept_pattern": "narrative",
+    "hero_pattern": "photo-full",
+    "menu_pattern": "card-grid"
+  },
+  "photos": {
+    "status": "placeholder"
+  },
+  "reference_url": ""
+}
