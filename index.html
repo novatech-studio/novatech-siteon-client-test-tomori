@@ -11,7 +11,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="ビストロ｜白金高輪のフレンチビストロ｜南仏の食卓を、夜の余韻に">
   <meta property="og:description" content="白金高輪駅徒歩3分。南仏の食卓のぬくもりを、東京の夜にそっと灯すフレンチビストロ。">
-  <meta property="og:image" content="https://placehold.co/1200x630/faf6f0/85684f">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&h=630&fit=crop">
   <meta property="og:url" content="https://tomori.example/">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23faf6f0'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' font-size='34' font-family='Georgia,serif' fill='%2385684f'%3ET%3C/text%3E%3C/svg%3E">
@@ -60,6 +60,14 @@
     * {
       box-sizing: border-box;
     }
+    /* 日本語改行制御（japanese-copy-guide.md準拠） */
+    h1, h2, h3, .hero-copy, .section-title { word-break: keep-all; overflow-wrap: break-word; }
+    h1, .hero-copy { max-width: 18em; }
+    h2 { max-width: 22em; }
+    p, li, dd { word-break: normal; overflow-wrap: break-word; line-height: 2; }
+    .card h3, [class*="-card"] h3 { word-break: keep-all; overflow-wrap: anywhere; }
+    .card, [class*="-card"] { overflow: hidden; }
+
 
     html {
       scroll-behavior: smooth;
@@ -325,7 +333,7 @@
       color: var(--bg);
       background:
         linear-gradient(180deg, rgba(44, 38, 33, 0.08) 0%, rgba(44, 38, 33, 0.44) 45%, rgba(44, 38, 33, 0.78) 100%),
-        url("https://placehold.co/1600x2000/faf6f0/85684f");
+        url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&h=2000&fit=crop");
       background-size: cover;
       background-position: center;
     }
@@ -948,7 +956,7 @@
       "@type": "Restaurant",
       "name": "ビストロ",
       "alternateName": "Fraviel Table",
-      "image": "https://placehold.co/1200x900/faf6f0/85684f",
+      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&h=900&fit=crop",
       "url": "https://tomori.example/",
       "telephone": "03-0000-7777",
       "servesCuisine": "フランス料理",
@@ -1061,7 +1069,7 @@
             </div>
           </div>
           <figure class="story-visual fade-in">
-            <img src="https://placehold.co/720x900/faf6f0/85684f" alt="ろうそくの灯りがゆれるビストロの店内イメージ" width="720" height="900" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=720&h=900&fit=crop" alt="ろうそくの灯りがゆれるビストロの店内イメージ" width="720" height="900" loading="lazy">
             <figcaption class="chef-meta">
               <p class="chef-name">楠井 透真 <span class="chef-role">シェフ</span></p>
               <p class="chef-career">東京・恵比寿のフレンチで6年、南仏アヴィニョンの星付きビストロで2年研鑽を積み、2022年に独立。</p>
@@ -1084,7 +1092,7 @@
         </div>
         <div class="menu-grid">
           <article class="menu-card fade-in">
-            <img src="https://placehold.co/640x440/faf6f0/85684f" alt="シャルキュトリ盛り合わせのイメージ" width="640" height="440" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=640&h=440&fit=crop" alt="シャルキュトリ盛り合わせのイメージ" width="640" height="440" loading="lazy">
             <div class="menu-card-body">
               <span class="menu-category">前菜</span>
               <div class="menu-card-top">
@@ -1095,7 +1103,7 @@
             </div>
           </article>
           <article class="menu-card fade-in">
-            <img src="https://placehold.co/640x440/faf6f0/85684f" alt="三浦野菜のグリル バーニャカウダのイメージ" width="640" height="440" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=640&h=440&fit=crop" alt="三浦野菜のグリル バーニャカウダのイメージ" width="640" height="440" loading="lazy">
             <div class="menu-card-body">
               <span class="menu-category">前菜</span>
               <div class="menu-card-top">
@@ -1106,7 +1114,7 @@
             </div>
           </article>
           <article class="menu-card fade-in">
-            <img src="https://placehold.co/640x440/faf6f0/85684f" alt="信州ハーブ鶏の赤ワイン煮のイメージ" width="640" height="440" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=640&h=440&fit=crop" alt="信州ハーブ鶏の赤ワイン煮のイメージ" width="640" height="440" loading="lazy">
             <div class="menu-card-body">
               <span class="menu-category">メイン</span>
               <div class="menu-card-top">
@@ -1117,7 +1125,7 @@
             </div>
           </article>
           <article class="menu-card fade-in">
-            <img src="https://placehold.co/640x440/faf6f0/85684f" alt="本日の魚介ブイヤベースのイメージ" width="640" height="440" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=640&h=440&fit=crop" alt="本日の魚介ブイヤベースのイメージ" width="640" height="440" loading="lazy">
             <div class="menu-card-body">
               <span class="menu-category">メイン</span>
               <div class="menu-card-top">
@@ -1128,7 +1136,7 @@
             </div>
           </article>
           <article class="menu-card fade-in">
-            <img src="https://placehold.co/640x440/faf6f0/85684f" alt="国産和牛ハラミのグリルのイメージ" width="640" height="440" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=640&h=440&fit=crop" alt="国産和牛ハラミのグリルのイメージ" width="640" height="440" loading="lazy">
             <div class="menu-card-body">
               <span class="menu-category">メイン</span>
               <div class="menu-card-top">
@@ -1139,7 +1147,7 @@
             </div>
           </article>
           <article class="menu-card fade-in">
-            <img src="https://placehold.co/640x440/faf6f0/85684f" alt="クレームブリュレ バニラ風味のイメージ" width="640" height="440" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=640&h=440&fit=crop" alt="クレームブリュレ バニラ風味のイメージ" width="640" height="440" loading="lazy">
             <div class="menu-card-body">
               <span class="menu-category">デザート</span>
               <div class="menu-card-top">
@@ -1150,7 +1158,7 @@
             </div>
           </article>
           <article class="course-card fade-in" style="grid-column: 1 / -1;">
-            <img src="https://placehold.co/1200x520/faf6f0/85684f" alt="おまかせディナーコースのイメージ" width="1200" height="520" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&h=520&fit=crop" alt="おまかせディナーコースのイメージ" width="1200" height="520" loading="lazy">
             <div class="course-card-body">
               <span class="menu-category">ディナーコース</span>
               <div class="menu-card-top">
@@ -1184,23 +1192,23 @@
         </div>
         <div class="gallery-grid">
           <figure class="gallery-item gallery-item--large fade-in">
-            <img src="https://placehold.co/760x1040/faf6f0/85684f" alt="窓際テーブルに料理が並ぶ店内イメージ" width="760" height="1040" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=760&h=1040&fit=crop" alt="窓際テーブルに料理が並ぶ店内イメージ" width="760" height="1040" loading="lazy">
             <figcaption>住宅街の静けさに、灯りがやわらかく滲む夜。</figcaption>
           </figure>
           <figure class="gallery-item fade-in">
-            <img src="https://placehold.co/520x420/faf6f0/85684f" alt="炭火で焼き上げた肉料理のイメージ" width="520" height="420" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=520&h=420&fit=crop" alt="炭火で焼き上げた肉料理のイメージ" width="520" height="420" loading="lazy">
             <figcaption>火入れの香ばしさを閉じ込めたメイン。</figcaption>
           </figure>
           <figure class="gallery-item fade-in">
-            <img src="https://placehold.co/520x420/faf6f0/85684f" alt="季節野菜の前菜盛り合わせのイメージ" width="520" height="420" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=520&h=420&fit=crop" alt="季節野菜の前菜盛り合わせのイメージ" width="520" height="420" loading="lazy">
             <figcaption>季節の色をそのまま生かした前菜。</figcaption>
           </figure>
           <figure class="gallery-item fade-in">
-            <img src="https://placehold.co/520x420/faf6f0/85684f" alt="ワイングラスとろうそくが並ぶカウンター席イメージ" width="520" height="420" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=520&h=420&fit=crop" alt="ワイングラスとろうそくが並ぶカウンター席イメージ" width="520" height="420" loading="lazy">
             <figcaption>会話に寄り添う、やわらかな灯りのカウンター。</figcaption>
           </figure>
           <figure class="gallery-item fade-in">
-            <img src="https://placehold.co/520x420/faf6f0/85684f" alt="デザートプレートのイメージ" width="520" height="420" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=520&h=420&fit=crop" alt="デザートプレートのイメージ" width="520" height="420" loading="lazy">
             <figcaption>食後の余韻を深くする甘味まで、静かに丁寧に。</figcaption>
           </figure>
         </div>
@@ -1243,7 +1251,7 @@
             </dl>
           </div>
           <figure class="map-card fade-in">
-            <img src="https://placehold.co/900x720/faf6f0/85684f" alt="白金高輪駅からビストロへのアクセスイメージ" width="900" height="720" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900&h=720&fit=crop" alt="白金高輪駅からビストロへのアクセスイメージ" width="900" height="720" loading="lazy">
           </figure>
         </div>
       </div>
@@ -1329,6 +1337,7 @@
     <p class="demo-notice" style="text-align:center; font-size:0.75rem; color:var(--text-light); padding:16px 0;">
   ※ SateOnの制作イメージです。実在する店舗・企業ではありません。
 </p>
+  <p style="text-align:center;font-size:0.75rem;color:var(--text-light);padding:8px 0;">※ 写真はイメージです</p>
 </footer>
 
   <div class="sticky-cta">
