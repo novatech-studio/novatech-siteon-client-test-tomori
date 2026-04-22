@@ -249,6 +249,7 @@
     .hero {
       min-height: calc(100svh - 72px);
       display: grid;
+      grid-template-columns: minmax(0, 1fr);
       align-items: end;
       padding: clamp(72px, 12vw, 140px) 0 64px;
       background:
@@ -827,7 +828,7 @@
       .reservation-grid,
       .cta-grid,
       .gallery-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
       }
 
       .menu-grid,
@@ -907,7 +908,7 @@
       .info-item,
       .hero-list-item,
       .choice {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
       }
 
       .visual-stack,
@@ -915,7 +916,7 @@
       .menu-summary,
       .reservation-gallery,
       .gallery-col {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
       }
 
       .section-head {
