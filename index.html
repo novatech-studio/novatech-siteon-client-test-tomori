@@ -431,7 +431,7 @@
     .story-grid {
       display: grid;
       grid-template-columns: 1.05fr 0.95fr;
-      gap: 28px;
+      gap: 40px;
       align-items: stretch;
     }
 
@@ -482,14 +482,12 @@
     .menu-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 20px;
+      gap: 30px;
     }
 
     .menu-card {
       overflow: hidden;
-      border: 1px solid rgba(var(--line-rgb), 0.9);
       background: rgba(var(--bg-dark-rgb), 0.34);
-      box-shadow: 0 16px 40px rgba(var(--bg-dark-rgb), 0.2);
     }
 
     .menu-card img {
@@ -497,7 +495,7 @@
     }
 
     .menu-body {
-      padding: 20px;
+      padding: 28px;
     }
 
     .menu-price {
@@ -520,15 +518,14 @@
     }
 
     .menu-summary {
-      margin-top: 28px;
+      margin-top: 40px;
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
+      gap: 24px;
     }
 
     .summary-box {
-      padding: 22px;
-      border: 1px solid rgba(var(--line-rgb), 0.9);
+      padding: 32px;
       background: rgba(var(--bg-rgb), 0.72);
     }
 
@@ -548,12 +545,12 @@
     .gallery-grid {
       display: grid;
       grid-template-columns: 1.1fr 1.1fr 0.8fr;
-      gap: 18px;
+      gap: 26px;
     }
 
     .gallery-col {
       display: grid;
-      gap: 18px;
+      gap: 26px;
     }
 
     .gallery-card {
@@ -596,10 +593,8 @@
 
     .panel {
       height: 100%;
-      padding: clamp(26px, 4vw, 36px);
-      border: 1px solid rgba(var(--line-rgb), 0.9);
+      padding: clamp(32px, 5vw, 48px);
       background: rgba(var(--bg-dark-rgb), 0.38);
-      box-shadow: 0 20px 60px rgba(var(--bg-dark-rgb), 0.18);
     }
 
     .panel h3 {
@@ -655,9 +650,12 @@
       grid-template-columns: 1fr auto;
       gap: 16px;
       align-items: center;
-      padding: 18px 20px;
-      border: 1px solid rgba(var(--line-rgb), 0.9);
-      background: rgba(var(--bg-rgb), 0.72);
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .choice:first-child {
+      border-top: 1px solid var(--line);
     }
 
     .choice strong {
@@ -1330,24 +1328,24 @@
             <div class="reservation-choices">
               <div class="choice">
                 <div>
-                  <strong>電話で予約</strong>
+                  <strong>ネットで予約する</strong>
+                  <span>24時間いつでも席の予約が完了します。</span>
+                </div>
+                <a class="btn btn-primary" href="https://coubic.com/example" target="_blank" rel="noopener noreferrer">ネット予約</a>
+              </div>
+              <div class="choice">
+                <div>
+                  <strong>お電話で予約</strong>
                   <span>空席確認や当日の連絡はこちらが最短です。</span>
                 </div>
-                <a class="btn btn-secondary" href="tel:0300007777">03-0000-7777</a>
+                <a class="btn btn-secondary" href="tel:03-0000-0000">03-0000-0000</a>
               </div>
               <div class="choice">
                 <div>
-                  <strong>LINEで問い合わせ</strong>
+                  <strong>LINE 予約</strong>
                   <span>席の相談や軽い質問は、移動中でも送りやすい方法です。</span>
                 </div>
-                <a class="btn btn-secondary" href="https://lin.ee/N4rT8vLc" target="_blank" rel="noopener noreferrer">LINE</a>
-              </div>
-              <div class="choice">
-                <div>
-                  <strong>Instagramを見る</strong>
-                  <span>その日の空気感や料理の雰囲気を先に知りたい人向けです。</span>
-                </div>
-                <a class="btn btn-secondary" href="https://www.instagram.com/fravieltable_demo" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a class="btn btn-secondary" href="https://lin.ee/example" target="_blank" rel="noopener noreferrer">LINE</a>
               </div>
             </div>
           </div>
