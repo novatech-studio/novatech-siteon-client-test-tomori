@@ -19,7 +19,7 @@
   >
   <meta
     property="og:image"
-    content="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=65&fm=webp"
+    content="assets/hero.webp"
   >
   <meta property="og:locale" content="ja_JP">
   <meta name="twitter:card" content="summary_large_image">
@@ -254,7 +254,7 @@
       padding: clamp(72px, 12vw, 140px) 0 64px;
       background:
         linear-gradient(rgba(26, 18, 16, 0.6), rgba(26, 18, 16, 0.6)),
-        url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=65&fm=webp") center/cover;
+        url("assets/hero.webp") center/cover;
     }
 
     .hero-grid {
@@ -316,10 +316,11 @@
       align-items: center;
       justify-content: center;
       min-height: 50px;
-      padding: 0 22px;
+      padding: 1rem 2.5rem !important;
+      font-size: 0.85rem !important;
       border-radius: 8px !important;
       border: none;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.1em !important;
       transition:
         transform 0.35s ease,
         background-color 0.35s ease,
@@ -575,13 +576,6 @@
       height: 100%;
       object-fit: cover;
       display: block;
-    }
-
-    .gallery-card figcaption {
-      padding: 1rem 0;
-      font-size: 0.85rem;
-      color: rgba(255, 255, 255, 0.7);
-      letter-spacing: 0.05em;
     }
 
     .gallery-card.tall {
@@ -966,7 +960,7 @@
       "@context": "https://schema.org",
       "@type": "Restaurant",
       "name": "Fraviel Table",
-      "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=65&fm=webp",
+      "image": "assets/hero.webp",
       "description": "素材と火を軸にした白金高輪の本格フレンチビストロ。",
       "servesCuisine": "French",
       "telephone": "03-0000-7777",
@@ -1057,13 +1051,13 @@
           <div class="visual-stack">
             <img
               class="main-photo"
-              src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800&h=600&fit=crop"
+              src="assets/story-chef.webp"
               alt="厨房で調理するシェフ"
               width="800" height="600" loading="lazy"
             >
             <img
               class="side-photo"
-              src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&h=800&fit=crop"
+              src="assets/story-wine.webp"
               alt="赤ワインのグラス"
               width="600" height="800" loading="lazy"
             >
@@ -1098,7 +1092,7 @@
         <div class="menu-grid">
           <article class="menu-card fade">
             <img
-              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=480&h=360&fit=crop"
+              src="assets/menu-charcuterie.webp"
               alt="シャルキュトリ盛り合わせ"
               width="480" height="360" loading="lazy"
             >
@@ -1110,7 +1104,7 @@
           </article>
           <article class="menu-card fade">
             <img
-              src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=480&h=360&fit=crop"
+              src="assets/menu-seasonal-grill.webp"
               alt="季節の野菜グリル"
               width="480" height="360" loading="lazy"
             >
@@ -1122,7 +1116,7 @@
           </article>
           <article class="menu-card fade">
             <img
-              src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=480&h=360&fit=crop"
+              src="assets/menu-coq-au-vin.webp"
               alt="鶏の赤ワイン煮込み"
               width="480" height="360" loading="lazy"
             >
@@ -1134,7 +1128,7 @@
           </article>
           <article class="menu-card fade">
             <img
-              src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=480&h=360&fit=crop"
+              src="assets/menu-bouillabaisse.webp"
               alt="魚介ブイヤベース"
               width="480" height="360" loading="lazy"
             >
@@ -1146,7 +1140,7 @@
           </article>
           <article class="menu-card fade">
             <img
-              src="https://images.unsplash.com/photo-1544025162-d76694265947?w=480&h=360&fit=crop"
+              src="assets/menu-wagyu.webp"
               alt="和牛ハラミのグリル"
               width="480" height="360" loading="lazy"
             >
@@ -1158,7 +1152,7 @@
           </article>
           <article class="menu-card fade">
             <img
-              src="https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?w=480&h=360&fit=crop"
+              src="assets/menu-creme-brulee.webp"
               alt="クレームブリュレ"
               width="480" height="360" loading="lazy"
             >
@@ -1201,47 +1195,42 @@
           <div class="gallery-col">
             <figure class="gallery-card">
               <img
-                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&h=300&fit=crop"
+                src="assets/gallery-candle-table.webp"
                 alt="キャンドルの灯るテーブル"
                 width="400" height="300" loading="lazy"
               >
-              <figcaption>キャンドルの揺れで、テーブルが少しだけやわらぐ。</figcaption>
             </figure>
             <figure class="gallery-card">
               <img
-                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop"
+                src="assets/gallery-entrance.webp"
                 alt="ビストロの玄関"
                 width="400" height="300" loading="lazy"
               >
-              <figcaption>夜の入口は、肩の力を抜くために少し暗めに。</figcaption>
             </figure>
           </div>
           <div class="gallery-col">
             <figure class="gallery-card tall">
               <img
-                src="https://images.unsplash.com/photo-1525268323446-0505b6fe7778?w=400&h=300&fit=crop"
+                src="assets/gallery-counter-wine.webp"
                 alt="カウンターとワインボトル"
                 width="400" height="300" loading="lazy"
               >
-              <figcaption>並んだボトルとカウンターの距離が、ちょうどいい近さをつくる。</figcaption>
             </figure>
           </div>
           <div class="gallery-col">
             <figure class="gallery-card">
               <img
-                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=300&fit=crop"
+                src="assets/gallery-brick-interior.webp"
                 alt="レンガ壁の店内"
                 width="400" height="300" loading="lazy"
               >
-              <figcaption>レンガ壁のざらつきが、料理の温度とよく似合う。</figcaption>
             </figure>
             <figure class="gallery-card">
               <img
-                src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=400&h=300&fit=crop"
+                src="assets/gallery-dining-table.webp"
                 alt="料理が並ぶビストロテーブル"
                 width="400" height="300" loading="lazy"
               >
-              <figcaption>グラスを重ねる夜に、視線が落ち着くテーブル景色。</figcaption>
             </figure>
           </div>
         </div>
@@ -1262,7 +1251,7 @@
         <div class="access-grid">
           <img
             class="access-photo"
-            src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=600&h=400&fit=crop"
+            src="assets/access-interior.webp"
             alt="温かな雰囲気の店内"
             width="600" height="400" loading="lazy"
           >
@@ -1348,19 +1337,17 @@
           <div class="reservation-gallery">
             <figure>
               <img
-                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=520&h=620&fit=crop"
+                src="assets/reservation-dinner-scene.webp"
                 alt="テーブルに料理が並ぶディナーシーン"
                 width="520" height="620" loading="lazy"
               >
-              <figcaption>ゆっくり食べたい夜にも、会話を中心にしたい夜にも。</figcaption>
             </figure>
             <figure>
               <img
-                src="https://images.unsplash.com/photo-1547592180-85f173990554?w=520&h=620&fit=crop"
+                src="assets/reservation-wine-appetizer.webp"
                 alt="赤ワインと前菜が並ぶテーブル"
                 width="520" height="620" loading="lazy"
               >
-              <figcaption>ワインから決める人にも、料理から選ぶ人にも。</figcaption>
             </figure>
           </div>
         </div>
@@ -1383,7 +1370,7 @@
         </div>
         <div class="cta-visual">
           <img
-            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=640&h=853&fit=crop&q=70"
+            src="assets/cta-table-scene.webp"
             alt="Fraviel Table を象徴するレストランのテーブル風景"
             width="640" height="853" loading="lazy"
           >
