@@ -566,22 +566,21 @@
     }
 
     .gallery-card {
-      position: relative;
-      overflow: hidden;
       min-height: 220px;
-      border-radius: var(--r);
     }
 
-    .gallery-card::after {
-      content: attr(data-caption);
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      padding: 18px;
-      background: linear-gradient(180deg, transparent, rgba(var(--bg-dark-rgb), 0.82));
-      color: var(--text);
-      font-size: 0.92rem;
+    .gallery-card img {
+      border-radius: 8px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .gallery-card figcaption {
+      padding: 1rem 0;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.7);
       letter-spacing: 0.05em;
     }
 
@@ -1015,7 +1014,7 @@
       <div class="wrap hero-grid">
         <div class="fade">
           <p class="eyebrow">Shirokane-Takanawa French Bistro</p>
-          <h1>素材と火、ふたつだけで語る。</h1>
+          <h1>素材と火、<br>ふたつだけで<br>語る。</h1>
           <p class="hero-sub">恵比寿の路地に灯る、本格フレンチビストロ。</p>
           <p class="hero-en">Where honest cooking meets the night.</p>
           <div class="hero-actions">
@@ -1023,27 +1022,6 @@
             <a class="btn btn-secondary" href="#menu">メニューを見る</a>
           </div>
         </div>
-        <aside class="hero-card fade">
-          <p>白金高輪駅から歩いて5分。肩ひじ張らずに、でも料理は真面目に。夜の一皿とワインをゆっくり楽しめる店です。</p>
-          <div class="hero-list">
-            <div class="hero-list-item">
-              <strong>Hours</strong>
-              <span>18:00-23:00（L.O.22:00） / 月曜定休</span>
-            </div>
-            <div class="hero-list-item">
-              <strong>Course</strong>
-              <span>コース 6,600円〜 / アラカルト 各品1,200円〜</span>
-            </div>
-            <div class="hero-list-item">
-              <strong>Chef</strong>
-              <span>楠井透真</span>
-            </div>
-            <div class="hero-list-item">
-              <strong>Contact</strong>
-              <span>03-0000-7777 / @fravieltable_demo</span>
-            </div>
-          </div>
-        </aside>
       </div>
     </section>
 
@@ -1221,44 +1199,49 @@
         </div>
         <div class="gallery-grid">
           <div class="gallery-col">
-            <figure class="gallery-card" data-caption="キャンドルの揺れで、テーブルが少しだけやわらぐ。">
+            <figure class="gallery-card">
               <img
                 src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&h=300&fit=crop"
                 alt="キャンドルの灯るテーブル"
                 width="400" height="300" loading="lazy"
               >
+              <figcaption>キャンドルの揺れで、テーブルが少しだけやわらぐ。</figcaption>
             </figure>
-            <figure class="gallery-card" data-caption="夜の入口は、肩の力を抜くために少し暗めに。">
+            <figure class="gallery-card">
               <img
                 src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop"
                 alt="ビストロの玄関"
                 width="400" height="300" loading="lazy"
               >
+              <figcaption>夜の入口は、肩の力を抜くために少し暗めに。</figcaption>
             </figure>
           </div>
           <div class="gallery-col">
-            <figure class="gallery-card tall" data-caption="並んだボトルとカウンターの距離が、ちょうどいい近さをつくる。">
+            <figure class="gallery-card tall">
               <img
                 src="https://images.unsplash.com/photo-1525268323446-0505b6fe7778?w=400&h=300&fit=crop"
                 alt="カウンターとワインボトル"
                 width="400" height="300" loading="lazy"
               >
+              <figcaption>並んだボトルとカウンターの距離が、ちょうどいい近さをつくる。</figcaption>
             </figure>
           </div>
           <div class="gallery-col">
-            <figure class="gallery-card" data-caption="レンガ壁のざらつきが、料理の温度とよく似合う。">
+            <figure class="gallery-card">
               <img
                 src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=300&fit=crop"
                 alt="レンガ壁の店内"
                 width="400" height="300" loading="lazy"
               >
+              <figcaption>レンガ壁のざらつきが、料理の温度とよく似合う。</figcaption>
             </figure>
-            <figure class="gallery-card" data-caption="グラスを重ねる夜に、視線が落ち着くテーブル景色。">
+            <figure class="gallery-card">
               <img
                 src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=400&h=300&fit=crop"
                 alt="料理が並ぶビストロテーブル"
                 width="400" height="300" loading="lazy"
               >
+              <figcaption>グラスを重ねる夜に、視線が落ち着くテーブル景色。</figcaption>
             </figure>
           </div>
         </div>
