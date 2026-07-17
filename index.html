@@ -83,7 +83,8 @@
 
     body {
       margin: 0;
-      overflow-x: hidden;
+      /* body に overflow-x:hidden を置くと body がスクロールコンテナ化し
+         .topbar の position:sticky が効かなくなる。横スクロール抑止は html 側が担う。 */
       background:
         radial-gradient(circle at top, rgba(var(--accent-rgb), 0.12), transparent 34%),
         linear-gradient(180deg, rgba(var(--bg-alt-rgb), 0.96), rgba(var(--bg-rgb), 1));
