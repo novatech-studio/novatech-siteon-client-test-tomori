@@ -865,10 +865,14 @@
         position: relative;
       }
 
+      /* パネル位置は固定pxではなくヘッダー実高に追従させる（rules.md 51）。
+         ヘッダー内テキストの折り返しで実高が変わると、固定px参照ではパネルが
+         ヘッダーの裏に潜って先頭が隠れる。 */
+      /* 背景は完全不透明にする（rules.md 50）。 */
       .nav {
-        position: fixed;
-        inset: 64px 0 auto 0;
-        background: rgba(var(--bg-dark-rgb), 0.97);
+        position: absolute;
+        inset: 100% 0 auto 0;
+        background: var(--bg-dark);
         border-bottom: 1px solid rgba(var(--line-rgb), 0.8);
         padding: 20px var(--gutter) 28px;
         z-index: 999;
