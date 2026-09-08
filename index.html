@@ -313,6 +313,27 @@
       margin-top: 34px;
     }
 
+    /* スキップナビゲーション（rules.md 31）。キーボード利用者がナビを毎回
+       通過させられるのを防ぐ。フォーカス時のみ可視化する。 */
+    .skip-link {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      z-index: 999;
+      padding: 12px 18px;
+      background: var(--accent);
+      color: var(--bg);
+      border-radius: 6px;
+      /* left: -9999px は横方向のはみ出しとして検出されるため使わない。
+         他サイトと同じく transform で画面外へ逃がす。 */
+      transform: translateY(-160%);
+    }
+
+    .skip-link:focus,
+    .skip-link:focus-visible {
+      transform: translateY(0);
+    }
+
     .btn {
       display: inline-flex;
       align-items: center;
@@ -337,7 +358,9 @@
 
     .btn-primary {
       background: var(--accent);
-      color: #fff;
+      /* ブランド色の上で白文字はコントラスト不足（rules.md 35 / WCAG AA 4.5:1）。
+         背景色を変えるとブランドが変わるため、文字色を既存パレットの濃色にする。 */
+      color: var(--bg);
       font-weight: 400;
       border: none;
     }
@@ -351,7 +374,7 @@
     .btn-secondary:hover,
     .btn-secondary:focus-visible {
       background: var(--accent);
-      color: #fff;
+      color: var(--bg);
     }
 
     .hero-card {
@@ -1058,6 +1081,7 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#top">本文へスキップ</a>
   <header class="topbar">
     <div class="wrap topbar-inner">
       <a class="brand" href="#top" aria-label="Fraviel Table">
@@ -1462,7 +1486,7 @@
       <div class="demo-notice">SateOn demo-notice / This page is a concept site for Fraviel Table.</div>
       <div class="footer-copy">写真はイメージです / © 2026 Fraviel Table</div>
     </div>
-    <p style="text-align:center;font-size:0.75rem;color:var(--text-light);padding:8px 0;">※ SateOnの制作イメージです。実在する店舗・企業ではありません。</p>
+    <p style="text-align:center;font-size:0.75rem;color:#81786B;padding:8px 0;">※ SateOnの制作イメージです。実在する店舗・企業ではありません。</p>
 </footer>
 
   <noscript>
