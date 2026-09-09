@@ -755,28 +755,14 @@
       box-shadow: var(--shadow);
     }
 
-    .cta-visual .floating-card {
-      position: absolute;
-      left: 20px;
-      bottom: 20px;
-      max-width: 260px;
-      padding: 18px 20px;
-      background: rgba(var(--bg-dark-rgb), 0.86);
-      backdrop-filter: blur(8px);
-    }
-
-    .floating-card strong {
-      display: block;
-      margin-bottom: 8px;
-      color: var(--accent);
-      font-weight: 400;
-    }
-
-    .floating-card p {
-      margin: 0;
-      color: var(--text-mid);
+    /* 価格と最寄駅は写真に載せず、行動する直前の地の文として置く。
+       半透明パネルは写真を隠すうえ、同じ事実がページ内に既に2回出ている。 */
+    .cta-facts {
+      margin: 18px 0 0;
       font-size: 0.9rem;
     }
+
+
 
     .footer {
       padding: 30px 0 42px;
@@ -1420,7 +1406,6 @@
     <section class="section cta">
       <div class="wrap cta-grid">
         <div class="cta-copy fade">
-          <div class="section-kicker">Final CTA</div>
           <h2>今日は少しだけ、夜を丁寧に使う。</h2>
           <p>
             火の香りが立つ料理と、白い皿の余白、深すぎないワイン。Fraviel Table は、話したい夜にも、静かに食べたい夜にも似合います。
@@ -1430,6 +1415,7 @@
             <a class="btn btn-primary" href="tel:0300007777">今すぐ電話する</a>
             <a class="btn btn-secondary" href="https://lin.ee/N4rT8vLc" target="_blank" rel="noopener noreferrer">LINEで聞く</a>
           </div>
+          <p class="cta-facts">コース 6,600円〜 / アラカルト 各品 1,200円〜　白金高輪駅 徒歩5分</p>
         </div>
         <div class="cta-visual">
           <img
@@ -1437,10 +1423,6 @@
             alt="Fraviel Table を象徴するレストランのテーブル風景"
             width="640" height="853" loading="lazy"
           >
-          <div class="floating-card">
-            <strong>Tonight at Fraviel Table</strong>
-            <p>コース 6,600円〜 / アラカルト 各品 1,200円〜。白金高輪駅徒歩5分。</p>
-          </div>
         </div>
       </div>
     </section>
