@@ -414,28 +414,8 @@
       font-weight: 400;
     }
 
-    .marquee {
-      overflow: hidden;
-      border-top: 1px solid rgba(var(--line-rgb), 0.9);
-      border-bottom: 1px solid rgba(var(--line-rgb), 0.9);
-      background: var(--bg-alt);
-    }
 
-    .marquee-track {
-      display: flex;
-      gap: 28px;
-      width: max-content;
-      padding: 14px 0;
-      color: rgba(var(--text-rgb), 0.84);
-      white-space: nowrap;
-      animation: marquee 24s linear infinite;
-    }
 
-    .marquee-track span {
-      font-family: var(--display);
-      font-size: 1.3rem;
-      letter-spacing: 0.16em;
-    }
 
     .section-head {
       display: grid;
@@ -841,14 +821,6 @@
       transform: translateY(0);
     }
 
-    @keyframes marquee {
-      from {
-        transform: translateX(0);
-      }
-      to {
-        transform: translateX(-50%);
-      }
-    }
 
     @media (max-width: 960px) {
       .hero-grid,
@@ -1125,22 +1097,7 @@
       </div>
     </section>
 
-    <section class="marquee" aria-label="フラヴィエル テーブル キーワード">
-      <div class="marquee-track">
-        <span>フラヴィエル テーブル</span>
-        <span>季節の食材</span>
-        <span>薪火料理</span>
-        <span>グラスワイン</span>
-        <span>白の余韻</span>
-        <span>夜のビストロ</span>
-        <span>フラヴィエル テーブル</span>
-        <span>季節の食材</span>
-        <span>薪火料理</span>
-        <span>グラスワイン</span>
-        <span>白の余韻</span>
-        <span>夜のビストロ</span>
-      </div>
-    </section>
+    
 
     <section id="story" class="section">
       <div class="wrap">
