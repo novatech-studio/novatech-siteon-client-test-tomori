@@ -1066,6 +1066,13 @@
         font-size: var(--t-caption);
       }
     }
+
+    /* 句点だけが行頭に孤立していた。mobile-safety の overflow-wrap: anywhere が禁則を無視して折るため、
+       この要素だけ文節を保ち、収まらないときだけ break-word に逃がす。 */
+    .choice span {
+      word-break: keep-all;
+      overflow-wrap: break-word;
+    }
 </style>
   <script type="application/ld+json">
     {
@@ -1419,7 +1426,7 @@
               <div class="choice">
                 <div>
                   <strong>お電話で予約</strong>
-                  <span>空席確認や当日の連絡はこちらが最短です。</span>
+                  <span>空席確認や<wbr>当日の連絡は<wbr>こちらが最短です。</span>
                 </div>
                 <a class="btn btn-secondary" href="tel:03-0000-7777">03-0000-7777</a>
               </div>
